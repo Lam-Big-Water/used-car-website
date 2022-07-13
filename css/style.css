@@ -91,9 +91,26 @@ section {
 }
 
 .header .navbar a {
+    position: relative;
     font-size: 2rem;
     margin-left: 2rem;
     color: var(--black);
+}
+
+.header nav a:hover,
+.header nav a.active {
+    color: var(--main-color);
+}
+
+.header nav a.active::after,
+.header nav a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
 
 .header .navbar a:hover {
@@ -688,7 +705,7 @@ margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
-    
+
     .heading h1{
         font-size: 4rem;
     }
