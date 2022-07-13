@@ -705,6 +705,16 @@ margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
+    .header nav a.active::after,
+    .header nav a:hover::after {
+        content: "";
+        width: 0;
+        height: 0px;
+        background: var(--main-color);
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+    }
 
     .heading h1{
         font-size: 4rem;
@@ -741,6 +751,8 @@ margin-top: 2rem;
 }
 
 @media (max-width: 450px) {
+    
+
     html {
         font-size: 50%;
     }
