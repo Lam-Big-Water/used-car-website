@@ -38,7 +38,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+    background-color: var(--black);
 }
 
 section {
@@ -99,22 +99,22 @@ section {
 
 .header nav a:hover,
 .header nav a.active {
-    color: var(--main-color);
+    color: var(--black);
 }
 
 .header nav a.active::after,
 .header nav a:hover::after {
     content: "";
-    width: 30%;
+    width: 50%;
     height: 2px;
-    background: var(--main-color);
+    background: var(--black);
     position: absolute;
     bottom: -4px;
-    left: 20px;
+    left: 0;
 }
 
 .header .navbar a:hover {
-    color: var(--main-color);
+    color: var(--black);
 }
 
 #menu-btn {
@@ -198,7 +198,7 @@ section {
 
 .home .swiper-button-next,
 .home .swiper-button-prev {
-    background: var(--main-color);
+    background: var(--black);
     color: var(--white);
 }
 
@@ -265,7 +265,6 @@ section {
 .home-about .content {
     flex: 1 1 41rem;
     padding: 3rem;
-    background: var(--light-bg);
 }
 
 .home-about .content h3 {
@@ -283,12 +282,43 @@ section {
 /* home about */
 
 
+/* home show */
+.home-show {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-show .image {
+    width: 40rem;
+}
+
+.home-show .image img {
+    width: 100%;
+}
+
+.home-show .content {
+    flex: 1 1 30rem;
+    padding: 5rem;
+}
+
+.home-show .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.home-show .content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+}
+
+
+/* home show */
+
 
 /* home packages */
-
-.home-packages {
-    background: var(--light-bg);
-}
 
 .home-packages .box-container {
     display: grid;
@@ -297,7 +327,6 @@ section {
 }
 
 .home-packages .box-container .box {
-    border: var(--border);
     box-shadow: var(--box-shadow);
     background: var(--white);
 }
@@ -376,52 +405,16 @@ section {
 /* footer */
 
 .footer {
+    width: 100%;
     background: url(../images/footer-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-.footer .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 3rem;
-}
-
-.footer .box-container .box h3 {
-    color: var(--white);
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
-}
-
-.footer .box-container .box a {
-    color: var(--light-white);
-    font-size: 1.5rem;
-    padding-bottom: 1.5rem;
-    display: block;
-}
-
-.footer .box-container .box a i {
-    color: var(--main-color);
-    padding-right: .5rem;
-    transition: .2s linear;
-}
-
-.footer .box-container .box a:hover i {
-    padding-right: 2rem;
-}
-
-.footer .credit {
+.footer .statement {
     text-align: center;
-    padding-top: 3rem;
-    margin-top: 3rem;
-    border-top: .1rem solid var(--light-white);
-    font-size: 2rem;
-    color: var(--white);
+    color: #fff;
 }
 
-.footer .credit span {
-    color: var(--main-color);
-}
 /* footer */
 
 /* home pages */
@@ -442,11 +435,18 @@ section {
     justify-content: center;
 }
 
+
 .heading h1 {
     font-size: 10rem;
     text-transform: uppercase;
     color: var(--white);
     text-shadow: var(--text-shadow);
+}
+
+.about-title h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
 }
 
 .about {
@@ -561,6 +561,54 @@ section {
 
 /* package pages */
 
+#stocks .facets-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    line-height: 1;
+    
+}
+#stocks .item-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+#stocks .item {
+    flex: 1 1 25%;
+    padding: 1rem 1rem;
+    max-width: 40rem;
+    cursor: pointer;
+}
+
+#stocks .item img {
+    width: 100%;
+    max-height: 30rem;
+}
+#stocks .item-content {
+    box-shadow: var(--box-shadow);
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+}
+
 .packages .box-container{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -625,6 +673,78 @@ margin-top: 2rem;
 
 
 /* package pages */
+
+
+
+/* products pages */
+
+.products {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.products .img-area {
+    flex: 1 1 60%;
+    border: 1px solid black;
+
+}
+.products .img-area .collect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.products .img-area .collect div {
+    width: 50%;
+}
+.products .img-area .collect div img {
+    width: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+
+
+.products .img-area img {
+    width: 100%;
+}
+
+.products .details {
+    flex: 1 1 40%;
+    min-height: 60rem;
+    padding-left: 5rem;
+    border: 1px solid black;
+    text-align: left;
+
+}
+
+.products .details .content {
+    position: fixed;
+    width: 30rem;
+    overflow: hidden;
+}
+
+.products .details .content h3 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1rem 0;
+}
+
+.products .details .content h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1rem 0;
+}
+
+.products .details .content span {
+    font-size: 1.8rem;
+    line-height: 2.2;
+    
+}
+/* products pages */
 
 
 
@@ -702,9 +822,14 @@ margin-top: 2rem;
     .home .slide .content h3 {
         font-size: 10vw;
     }
+
+    
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
     .header nav a.active::after,
     .header nav a:hover::after {
         content: "";
@@ -748,6 +873,21 @@ margin-top: 2rem;
         margin: 2rem;
         text-align: center;
     }
+
+    .home-show .image {
+        width: 100%;
+    }
+
+    #stocks .item {
+        flex: 1 1 50%;
+        max-width: none;
+    }
+
+    #stocks .item .item-image img {
+        max-height: none;
+    }
+    
+    
 }
 
 @media (max-width: 450px) {
@@ -759,6 +899,26 @@ margin-top: 2rem;
 
     .heading-title {
         font-size: 3.5rem;
+    }
+
+    .header nav a.active::before,
+    .header nav a:hover::before {
+        content: "";
+        width: 20%;
+        height: 2px;
+        background: var(--black);
+        position: absolute;
+        bottom: -4px;
+        left: 40%;
+    }
+
+    .header .navbar a:hover {
+        color: var(--black);
+    }
+
+    #stocks .item {
+        width: 100%;
+        max-width: none;
     }
 }
 /* media queries */
