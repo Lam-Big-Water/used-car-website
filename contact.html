@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>book</title>
     <!-- swiper css link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -26,64 +26,77 @@
     <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="stock.html">In Stock</a>
-        <a href="about.html" class="active">About Us</a>
+        <a href="about.html">About Us</a>
         <a href="services.html">services</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
     </nav>
 
     <div id="menu-btn" class="fas fa-bars">
 
     </div>
 </section>
-
-
 <!-- header section ends -->
 
-<!-- home about section starts -->
 
-<section class="home-about">
+<!-- home show start -->
+<section class="home-show">
     <div class="image">
         <div class="about-title">
-            <h2>About Us</h2>
+            <h2>Contact</h2>
         </div>
-        <img src="images/index9.webp" alt="">
+        <img src="images/index8.webp" alt="">
     </div>
 
     <div class="content">
-        <h3>To Provide A Variety Of High-Quality Vehicles.</h3>
+        <h3>Our Showroom</h3>
+        
         <p>
-            SC Motors was founded 15 years ago in 2007.        
+            Address: 505, 5/F, DCH Building, 20 Kai Cheung Road, Kowloon Bay, HongKong.
         </p>
         <p>
-            Noticing that cars have been an inseparable part of daily life, car enthusiast emerges with interest in various type of cars, including classics, JDM’s, sports, and hyper cars.         
+            Open Hours: 11a.m - 6:00p.m. (Mon - Sun)
         </p>
         <p>
-            Here at Zhong Hwa Motors, we will provide a wide range of high-quality vehicles and services for customers to select, letting consumers enjoy the fun brought by cars.         
+            Tel: +852 6609 9955
         </p>
+        <a href="https://goo.gl/maps/zyi5K5tCCKvnLchVA" class="btn">Direction</a>
     </div>
 </section>
+<!-- home show ends -->
 
-<!-- home about section ends -->
 
-<!-- contact start -->
-<section class="contact">
-    <div class="about-title">
-        <h3 >Subscribe to our emails</h3>
-    </div>
-    <div class="contact-details">
-        <div class="book">
-            <button>Book Now</button>
+<!-- booking section starts -->
+<section class="booking thin-section">
+
+<h1 class="heading-title">Get In Touch</h1>
+
+<form action="book_form.php" method="post" class="book-form">
+
+    <div class="flex">
+        <div class="inputBox">
+            <span>name :</span>
+            <input type="text" placeholder="enter your name" name="name">
         </div>
-        <div class="media">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest-p"></i>
-            <i class="fab fa-youtube"></i>
+        <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="enter your email" name="email">
+        </div>
+        <div class="inputBox">
+            <span>phone :</span>
+            <input type="number" placeholder="enter your number" name="phone">
+        </div>
+        <div class="inputBox">
+            <span>comment :</span>
+            <input type="textarea" placeholder="enter your comment" name="comment">
         </div>
     </div>
+
+    <input type="submit" value="submit" class="btn" name="send">
+
+</form>
+
 </section>
-<!-- contact ends -->
+<!-- booking section ends -->
 
 
 <!-- home footer start -->
@@ -92,6 +105,9 @@
     <div class="statement">© 2022, ZH MOTORS Powered by Shopify</div>
 </section>
 <!-- home footer ends -->
+
+
+
 
 
     <!-- swiper js link  -->

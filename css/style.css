@@ -63,9 +63,14 @@ section {
     cursor: pointer;
 }
 
+.thin-section {
+    padding: 5rem 20%;
+}
+
 .btn:hover {
     background: var(--main-color);
 }
+
 
 
 /* home pages */
@@ -290,7 +295,7 @@ section {
 }
 
 .home-show .image {
-    width: 40rem;
+    width: 50%;
 }
 
 .home-show .image img {
@@ -298,7 +303,7 @@ section {
 }
 
 .home-show .content {
-    flex: 1 1 30rem;
+    flex: 1 1 50%;
     padding: 5rem;
 }
 
@@ -308,7 +313,7 @@ section {
 }
 
 .home-show .content p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1rem 0;
     line-height: 2;
     color: var(--black);
@@ -445,6 +450,12 @@ section {
 
 .about-title h2 {
     font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.about-title h3 {
+    font-size: 3rem;
     text-transform: uppercase;
     color: var(--black);
 }
@@ -596,7 +607,7 @@ section {
 
 #pagination a {
     text-decoration: none;
-    background-color: #088178;
+    background-color: var(--black);
     padding: 15px 20px;
     border-radius: 4px;
     color: #fff;
@@ -682,12 +693,10 @@ margin-top: 2rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
 .products .img-area {
     flex: 1 1 60%;
-    border: 1px solid black;
 
 }
 .products .img-area .collect {
@@ -695,14 +704,14 @@ margin-top: 2rem;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+.products .img-area img {
+    vertical-align: middle;
+}
 .products .img-area .collect div {
     width: 50%;
 }
 .products .img-area .collect div img {
     width: 100%;
-    margin: 0;
-    vertical-align: middle;
 }
 
 
@@ -714,13 +723,12 @@ margin-top: 2rem;
     flex: 1 1 40%;
     min-height: 60rem;
     padding-left: 5rem;
-    border: 1px solid black;
     text-align: left;
 
 }
 
 .products .details .content {
-    position: fixed;
+    position: static;
     width: 30rem;
     overflow: hidden;
 }
@@ -744,9 +752,36 @@ margin-top: 2rem;
     line-height: 2.2;
     
 }
+
+.contact {
+    width: 100%;
+    border-top: 0.1rem solid var(--black);
+    border-bottom: 0.1rem solid var(--black);
+}
+
+.contact .contact-details {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.contact .contact-details button {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem 4rem;
+    background-color: var(--black);
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+}
 /* products pages */
 
-
+.contact .contact-details .media i {
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 2.3rem 0.1rem;
+    text-align: center;
+}
 
 
 /* book pages */
@@ -757,7 +792,6 @@ margin-top: 2rem;
 
 .booking .book-form {
     padding: 2rem;
-    background: var(--light-bg);
 }
 
 .booking .book-form .flex {
@@ -767,7 +801,11 @@ margin-top: 2rem;
 }
 
 .booking .book-form .flex .inputBox {
-    flex: 1 1 41rem;
+    flex: 1 1 35rem;
+}
+.booking .book-form .flex :nth-child(3), 
+.booking .book-form .flex :nth-child(4){
+    flex: 1 1 100%;
 }
 
 .booking .book-form .flex .inputBox input {
@@ -778,6 +816,9 @@ margin-top: 2rem;
     text-transform: none;
     margin-top: 1.5rem;
     border: var(--border);
+}
+.booking .book-form .flex :nth-child(4) input {
+    padding: 2.2rem 1.4rem;
 }
 
 .booking .book-form .flex .inputBox input:focus{
@@ -799,6 +840,65 @@ margin-top: 2rem;
 }
 
 /* book pages */
+
+
+
+/* services pages */
+
+.our-services .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.our-services .box-container .box {
+    flex: 1 1 23%;
+    max-width: 28rem;
+    margin: 0.5rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+
+}
+
+.our-services .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+}
+
+.our-services .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.our-services .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.our-services .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.our-services .box-container .box .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.our-services .load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* services pages */
 
 
 
@@ -887,7 +987,33 @@ margin-top: 2rem;
         max-height: none;
     }
     
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
     
+    .products .details {
+        width: 100%;
+        min-height: none;
+        padding-left: none;
+        text-align: left;
+    }
+
+    .products .details .content {
+        position: static;
+        overflow: hidden;
+    }
+
+    .our-services .box-container .box {
+        flex: 1 1 48%;
+        max-width: none;
+        margin: 0.5rem;
+    }
+
+    .our-services .box-container .box .image {
+        height: none;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 450px) {
@@ -920,5 +1046,11 @@ margin-top: 2rem;
         width: 100%;
         max-width: none;
     }
+
+    .our-services .box-container .box {
+        flex: 1 1 100%;
+        margin: none;
+    }
+
 }
 /* media queries */
