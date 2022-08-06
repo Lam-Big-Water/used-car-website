@@ -80,7 +80,7 @@ section {
 .header {
     position: sticky;
     top: 0; left: 0; right: 0;
-    z-index: 1000;
+    z-index: 1;
     background-color: var(--white);
     display: flex;
     padding-top: 2rem;
@@ -578,8 +578,101 @@ section {
     justify-content: space-between;
     padding-top: 5rem;
     line-height: 1;
-    
 }
+
+#f-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#whole {
+    display: none;
+
+}
+
+#whole .mark-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+#stocks .filterBar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0rem;
+    height: 100vh;
+    width: 30rem;
+    background-color: var(--white);
+    z-index: 2;
+    transition: 1s;
+}
+
+#stocks .filterBar .BarTitle {
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#stocks .filterBar .BarTitle h3{
+    font-size: 1.6rem;
+}
+
+#stocks .filterBar .BarTitle p{
+    font-size: 1.4rem;
+}
+
+#stocks .filterBar .barList {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+#stocks .filterBar .barList span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+#stocks .filterBar .barList i {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+#filter-btn {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#stocks .filterBar .barBottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 400px;
+}
+
+#stocks .filterBar .barBottom span {
+    flex: 1;
+    text-align: center;
+    margin: 0.5rem;
+}
+
 #stocks .item-box {
     display: flex;
     flex-direction: row;
