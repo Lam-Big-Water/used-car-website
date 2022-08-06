@@ -68,7 +68,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--main-color);
+    background: var(--light-black);
 }
 
 
@@ -269,7 +269,7 @@ section {
 
 .home-about .content {
     flex: 1 1 41rem;
-    padding: 3rem;
+    padding-left: 3rem;
 }
 
 .home-about .content h3 {
@@ -304,7 +304,7 @@ section {
 
 .home-show .content {
     flex: 1 1 50%;
-    padding: 5rem;
+    padding-left: 2rem;
 }
 
 .home-show .content h3 {
@@ -327,8 +327,8 @@ section {
 
 .home-packages .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 3rem;
 }
 
 .home-packages .box-container .box {
@@ -601,6 +601,15 @@ section {
     box-shadow: var(--box-shadow);
 }
 
+#stocks .item-content h3 {
+    font-size: 1.5rem;
+}
+
+#stocks .item-content h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
 #pagination {
     text-align: center;
 }
@@ -728,8 +737,9 @@ margin-top: 2rem;
 }
 
 .products .details .content {
-    position: static;
+    position: sticky;
     width: 30rem;
+    top: 10rem;
     overflow: hidden;
 }
 
@@ -765,15 +775,7 @@ margin-top: 2rem;
     justify-content: space-between;
 }
 
-.contact .contact-details button {
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 2rem 4rem;
-    background-color: var(--black);
-    color: #fff;
-    text-align: center;
-    line-height: 1;
-}
+
 /* products pages */
 
 .contact .contact-details .media i {
@@ -974,8 +976,26 @@ margin-top: 2rem;
         text-align: center;
     }
 
+    .home-show .content {
+        padding-left: 0;
+    }
+
     .home-show .image {
         width: 100%;
+    }
+
+    .home-packages .box-container {
+        padding: 0 10%;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 3rem;
+    }
+
+    .home-packages .box-container .box {
+        min-height: 50rem;
+    }
+
+    .home-packages .box-container .box .image {
+        min-height: 45rem;
     }
 
     #stocks .item {
@@ -1042,6 +1062,10 @@ margin-top: 2rem;
         color: var(--black);
     }
 
+    .home-about .content {
+        padding: 0rem;
+    }
+
     #stocks .item {
         width: 100%;
         max-width: none;
@@ -1049,8 +1073,48 @@ margin-top: 2rem;
 
     .our-services .box-container .box {
         flex: 1 1 100%;
-        margin: none;
+        margin: 2rem 0;
     }
 
+    .our-services .box-container .box .image {
+        min-height: 35rem;
+    }
+
+    .home .swiper-button-next,
+    .home .swiper-button-prev {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .home .swiper-button-prev {
+        right: 4rem;
+    }
+    .home .swiper-button-next::after, .home .swiper-button-prev::after {
+        font-size: 1rem;
+    }
+
+    .home-packages .box-container {
+        padding: 0 0;
+    }
+
+    .home-packages .box-container .box .image {
+        min-height: 35rem;
+    }
+
+    .home-show .content {
+        padding: 0;
+    }
+
+    .home-about .content {
+        padding-left: 0;
+    }
+
+    .thin-section {
+        padding: 1rem;
+    }
+
+    .booking .book-form {
+        padding: 1rem;
+    }
 }
 /* media queries */
