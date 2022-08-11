@@ -80,7 +80,7 @@ section {
 .header {
     position: sticky;
     top: 0; left: 0; right: 0;
-    z-index: 1000;
+    z-index: 10;
     background-color: var(--white);
     display: flex;
     padding-top: 2rem;
@@ -613,7 +613,7 @@ section {
     height: 100vh;
     width: 30rem;
     background-color: var(--white);
-    z-index: 2;
+    z-index: 20;
 }
 
 #stocks .filterBar .BarTitle {
@@ -703,23 +703,45 @@ section {
     font-weight: 500;
 }
 
+/* 页码和省略号的统一样式 */
 #pagination {
     text-align: center;
 }
 
-#pagination a {
-    text-decoration: none;
-    background-color: var(--black);
-    padding: 15px 20px;
+#pagination a,
+#pagination i {
+    display: inline-block;
+    min-width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
     border-radius: 4px;
-    color: #fff;
-    font-weight: 600;
+    margin: 0 3px;
 }
 
-#pagination a i {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1;
+/* 页码 */
+#pagination a {
+    border: 1px solid #333;
+    background-color: #333;
+    color: #eee;
+    font-size: 13px;
+    user-select: none;
+}
+#pagination a:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+/* 当前页码 */
+#pagination a.current {
+    background-color: transparent;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 省略号 */
+#pagination i {
+    font-size: 18px;
 }
 
 .packages .box-container{
