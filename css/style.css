@@ -405,6 +405,27 @@ section {
 
 
 
+/* turn-top */
+
+.turn {
+    display: flex;
+    justify-content: end;
+}
+
+.turn .turn-top {
+    width: 4rem;
+    height: 4rem;
+    border: var(--black);
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    line-height: 4rem;
+    cursor: pointer;
+}
+/* turn-top */
+
+
 
 
 /* footer */
