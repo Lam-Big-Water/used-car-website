@@ -423,6 +423,11 @@ section {
     line-height: 4rem;
     cursor: pointer;
 }
+
+.turn .turn-top i {
+    font-size: 2rem;
+    padding: 1rem;
+}
 /* turn-top */
 
 
@@ -698,21 +703,36 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 5rem;
 }
 #stocks .item {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 25%;
     padding: 1rem 1rem;
-    max-width: 40rem;
     cursor: pointer;
+    overflow: hidden;
 }
+#stocks .item .item-image {
+    width: 100%;
+}
+
 
 #stocks .item img {
     width: 100%;
-    max-height: 30rem;
+    object-fit: cover;
 }
+
 #stocks .item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
     box-shadow: var(--box-shadow);
+    overflow: hidden;
+
 }
 
 #stocks .item-content h3 {
@@ -724,28 +744,33 @@ section {
     font-weight: 500;
 }
 
+#stocks .item-content p {
+    font-weight: bold;
+}
+
 /* 页码和省略号的统一样式 */
 #pagination {
     text-align: center;
+    vertical-align: bottom;
 }
 
 #pagination a,
 #pagination i {
     display: inline-block;
-    min-width: 32px;
-    height: 32px;
+    min-width: 3.2rem;
+    height: 3.2rem;
     text-align: center;
-    line-height: 32px;
-    border-radius: 4px;
-    margin: 0 3px;
+    line-height: 3.2rem;
+    border-radius: 0.4rem;
+    margin: 0 0.3rem;
 }
 
 /* 页码 */
 #pagination a {
-    border: 1px solid #333;
+    border: 0.1rem solid #333;
     background-color: #333;
     color: #eee;
-    font-size: 13px;
+    font-size: 1.6rem;
     user-select: none;
 }
 #pagination a:hover {
@@ -762,7 +787,7 @@ section {
 
 /* 省略号 */
 #pagination i {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .packages .box-container{
