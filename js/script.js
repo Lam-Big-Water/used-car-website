@@ -283,8 +283,6 @@ if(TB) {
     
     let A = document.documentElement.scrollTop;
     
-    console.log(W);
-    console.log(A);
     
     // 动画函数
     function animate(obj, target, callback) {
