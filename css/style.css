@@ -16,7 +16,7 @@
 }
 
 :root body {
-  position: absolute;/*很不好意思，至今我仍然不知道为什么要这句代码，知道了我再补充*/
+    position: absolute;/*很不好意思，至今我仍然不知道为什么要这句代码，知道了我再补充*/
 }
 
 * {
@@ -34,7 +34,7 @@
 
 body {
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
