@@ -98,6 +98,7 @@ section {
     display: flex;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background: gray;
     box-shadow: var(--box-shadow);
     align-items: center;
     justify-content: space-between;
