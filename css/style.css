@@ -11,6 +11,12 @@
     --border:.1rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;/*很不好意思，至今我仍然不知道为什么要这句代码，知道了我再补充*/
 }
 
 * {
@@ -24,8 +30,11 @@
     text-transform: capitalize;
 }
 
+
+
 body {
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
     
 }
 
