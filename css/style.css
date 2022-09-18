@@ -24,6 +24,11 @@
     text-transform: capitalize;
 }
 
+body {
+    width: 100%;
+
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
