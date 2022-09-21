@@ -17,6 +17,7 @@
 
 :root body {
     position: absolute;/*很不好意思，至今我仍然不知道为什么要这句代码，知道了我再补充*/
+    background: #000;
 
 }
 
@@ -59,6 +60,7 @@ html::-webkit-scrollbar-thumb {
 section,
 header {
     padding: 5rem 10%;
+    background-color: #fff;
 }
 
 .heading-title {
@@ -93,7 +95,7 @@ header {
 
 /* header */
 header {
-    background: #000;
+    background-color: #000;
 }
 
 .header {
