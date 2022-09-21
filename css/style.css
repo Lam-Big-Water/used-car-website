@@ -17,7 +17,6 @@
 
 :root body {
     position: absolute;/*很不好意思，至今我仍然不知道为什么要这句代码，知道了我再补充*/
-    background-color: black;
 
 }
 
@@ -37,14 +36,12 @@
 body {
     width: 100vw;
     /* overflow: hidden; */
-    background-color: black;
     
 }
 
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    background-color: black;
 }
 
 html::-webkit-scrollbar {
@@ -94,9 +91,11 @@ section {
 /* home pages */
 
 /* header */
+.top {
+    background: #000;
+}
 
 .header {
-    height: 3rem;
     position: sticky;
     top: 0; left: 0;
     z-index: 1000;
