@@ -56,7 +56,8 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--black);
 }
 
-section {
+section,
+header {
     padding: 5rem 10%;
 }
 
@@ -91,7 +92,7 @@ section {
 /* home pages */
 
 /* header */
-.top {
+header {
     background: #000;
 }
 
