@@ -666,7 +666,7 @@ header {
 #stocks .filterBar .BarTitle {
     align-self: center;
     text-align: center;
-    padding: 1rem;
+    padding-top: 10rem;
 }
 
 #stocks .filterBar .BarTitle h3{
@@ -686,6 +686,7 @@ header {
     align-items: center;
     padding: 1.5rem 1rem;
     cursor: pointer;
+    
 }
 
 #stocks .filterBar .barList span {
@@ -711,7 +712,8 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 400px;
+    margin-top: auto;
+    align-items: flex-end;
 }
 
 #stocks .filterBar .barBottom span {
